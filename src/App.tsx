@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import Title from "./components/Title";
 
 function App() {
   return (
     <div className="App">
-      Hello world!
+      <Title>Hello world!</Title>
     </div>
   );
 }
