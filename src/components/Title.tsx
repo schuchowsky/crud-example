@@ -12,7 +12,6 @@ const Title = ({ children }: any) => {
         lineHeight: "22px",
       }}
     >
-      
       {children}
     </h1>
   );

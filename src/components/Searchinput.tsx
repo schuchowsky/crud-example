@@ -1,15 +1,18 @@
 import React from "react";
 import vector from "../assets/Vector.svg";
 
-interface SearchinputProps {
-  value:{value},
-  onChange: () => return;
+interface SearchInputProps {
+  value: string;
+  onChange: () => string; 
 }
 
-const Searchinput = ({ value, onChange }: SearchinputProps ) => {
-  return (
+const SearchInput = ({ value, onChange }: SearchInputProps) => {
+return (
     <div>
       <input
+        onChange={(e) => alert(e.target.value)}
+        type="search"  
+          placeholder="Pesquisa por professor..........."
         style={{
           backgroundColor: "#F9F9FA",
           mixBlendMode: "normal",
@@ -17,14 +20,15 @@ const Searchinput = ({ value, onChange }: SearchinputProps ) => {
           boxSizing: "border-box",
           borderRadius: "20px",
           left: "calc(50 % - 336px / 2 - 248px)",
-        }}
-        type="text" value={value} onChange={SearchinputProps} placeholder="Pesquisa por professor..........." />
+               
+         }} />
+         {value}
       <img src={vector}  alt="Pesquisar" />  
     </div >
   );
 };
 
-export default Searchinput;
+export default SearchInput;
 
 
 

@@ -1,45 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "./components/Button";
 import Title from "./components/Title";
 import Header from "./components/Header";
-import Searchinput from "./components/Searchinput";
+import SearchInput from "./component/SearchInput";
 import Avatar from "./components/Avatar";
 import Notifications from "./components/Notifications";
 import Table from "./components/Table";
 
 function App() {
-   constructor(props) {
-     super(props);
-     this.state = {value: 'string'};
-     
-    this.handleChange = this.handleChange.bind(this);
-   }
-
-   handleChange(e) {
-     this.setState({value: e.target.value});
-   }
-   render() {
-    
-    const value = this.state.value;
-    return (
+  const[search, setSearch] = useState();
+  return (
       <div className="App">
-        <Header />
-        <br /> 
+        <Header />  
         <Title>Hello world!</Title>
-        <br />
-        <Searchinput value={value} onChange={this.handleChange}  /> 
-       
-        <br />
+        <SearchInput value={search} onChange={(e) => setSearch(e.target.value)} /> 
         <Button label={"Novo Professor"} onClick={() => alert("Clicou no botão")} />
-        <br />
         <Avatar />
-        <br />
         <Notifications />
-        <br />
         <Table />
       </div>
-    )
-  }
+    ) 
 }
 
 export default App;

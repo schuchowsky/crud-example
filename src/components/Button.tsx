@@ -8,7 +8,6 @@ interface ButtonProps {
 const Button = ({ label, onClick }: ButtonProps) => {
   return (
     <button 
-    
     onClick={onClick}
     style={{
       backgroundColor: "#434275",
