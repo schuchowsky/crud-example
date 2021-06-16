@@ -7,7 +7,7 @@ const Header = ({ children }: any) => {
         backgroundColor: "#fff",
         boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
         width: "1168px",
-        height: "144px"
+        height: "144px",  
       }}
     >
       {children}
