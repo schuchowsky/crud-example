@@ -22,9 +22,9 @@ return (
           boxSizing: "border-box",
           borderRadius: "20px",
           left: "calc(50 % - 336px / 2 - 248px)",      
-         }} />
-         
-      <img src={vector}  alt="Pesquisar" />  
+         }} 
+         /> 
+         <img src={vector}  alt="Pesquisar" /> 
     </div >
   );
 };

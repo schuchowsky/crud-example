@@ -9,7 +9,7 @@ const MenuHeader = ({ children }: any) => {
         width: "272px",
         height: "72px",
         left: "8px",
-        top: "130px",
+        top: "350px",
         color: "#fff",
         textAlign: "center",
         padding: "15px 0 0 0"
