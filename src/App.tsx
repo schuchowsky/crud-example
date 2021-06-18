@@ -41,7 +41,8 @@ function App() {
         <Table />
         <Menu />
     </div>
-  );
+  )
 }
+
 
 export default App;
