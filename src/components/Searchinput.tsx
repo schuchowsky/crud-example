@@ -2,7 +2,7 @@ import React from "react";
 import vector from "../assets/Vector.svg";
 
 interface SearchInputProps {
-  value: string;
+  value:string;
   onChange: (value: string ) => void; 
   placeholder: string;
 }

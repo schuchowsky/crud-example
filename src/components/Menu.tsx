@@ -6,14 +6,13 @@ const Menu = ({ children }: any) => {
       style={{
         backgroundColor: "#2A285B",
         width: "272px",
-        height: "1080px",
-        left: "0px",
-        top: "0px"
+        height: "500px",
+        // left: "0px",
+        // top: "0px",
       }}
     >
       {children}
-      </div>
-    
+    </div>
   );
 };
 

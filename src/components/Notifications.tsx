@@ -1,5 +1,5 @@
 import React from "react";
-import Notifica from "../assets/Notifica.svg";
+// import Bellicon from "../assets/bellicon.svg";
 
 const Notifications = ({ children }: any) => {
   return (
@@ -9,7 +9,7 @@ const Notifications = ({ children }: any) => {
         boxSizing: "border-box",
       }}
     >
-      <img src={Notifica} alt="Notificar" />
+      <img src={""} alt="Notificar" />
       {children}
     </div>
   );
